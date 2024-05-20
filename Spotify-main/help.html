@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/animation.css">
+		<link rel="stylesheet" href="./css/responsive.css">
+		<title>Kömək - ELAN</title>
+		<link rel="icon" href="Spotify-songs/logo3.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			header {
+				background-color: black;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Header-->
+		<custom-header></custom-header>
+		<!--Header-->
+
+		<!--Search-->
+		<div class="Search">
+			<div class="container">
+				<div class="search-box">
+<h1 class="title-1"> Biz sizə necə <br>
+	kömək edə bilərik?</h1>
+<div class="searchInputBox">
+<div class="seacrhIcon">
+<svg xmlns="http://www.w3.org/2000/svg" role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class=" " aria-label="Search icon">
+<line x1="15.54" y1="15.54" x2="20.41" y2="20.41" stroke="#181818"/>
+<circle cx="10.5" cy="10.5" r="7" fill="none" stroke="#181818"/>
+</svg>
+</div>
+<input type="text" class="search-input" aria-label="Search" placeholder="Axtar" autocomplete="off" value="">
+</div>
+</div>
+<div class="top-solution">
+<div class="top-solution-inner">
+<h3>HESAB YARDIMI</h3>
+<a href="">Giriş məlumatını xatırlamıram
+</a>
+</div>
+<div class="top-solution-inner">
+<h3>ÜZVLÜK SEÇENEKLERİ</h3>
+<a href=""> Ailə planına başlayın və ya<br> qoşulun </a>
+</div>
+<div class="top-solution-inner">
+<h3>HESAB YARDIMI</h3>
+<a href="">Mən parolumu sıfırlaya bilmirəm</a>
+</div>
+<div class="top-solution-inner">
+<h3>MƏXFİLLİK VƏ TƏHLÜKƏSİZLİK</h3>
+<a href="">Bu ELAN e-poçtu realdır <br>?</a>
+</div>
+</div>
+</div>
+</div>
+<!--Search-->
+
+<!--Links-->
+<div class="Help-links">
+<div class="container">
+<div class="links_boxs">
+<div class="link_box">
+<h3 class="title-1 collapsible">Hesab və Ödəniş</h3>
+<span>
+<a href="">Hesab yardımı</a>
+<a href="">Ödəniş yardımı</a>
+<a href="">Üzvlük seçimləri</a>
+<a href="">Ailə üçün Premium</a>
+<a href="">Premium Duo</a>
+<a href="">Tələbə üçün Premium</a>
+<a href="">Məxfilik və Təhlükəsizlik</a>
+<a href="">Mübahisələtin onlayn həlli</a>
+</span>
+</div>
+<div class="link_box">
+<h3 class="title-1 collapsible">ELAN-dan istifadə</h3>
+<span>
+<a href="">Başlamaq</a>
+<a href="">Pleylistlər</a>
+<a href="">Xüsusiyyətlər</a>
+<a href="">Sistem və Parametrlər Məlumatı</a>
+<a href="">Çıxarılma</a>
+</span>
+</div>
+<div class="link_box">
+<h3 class="title-1 collapsible">İstənilən yerdə qulaq asın</h3>
+<span>
+<a href="">Dinamiklər</a>
+<a href="">Televizorlar</a>
+<a href="">Avtomobillər</a>
+<a href="">Oyunlar</a>
+<a href="">Ağıllı saatlar</a>
+<a href="">Ağıllı ekranlar</a>
+<a href="">Səs köməkçiləri</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!--Links-->
+
+<!--Visit Community-->
+<div class="visitCommunity">
+<div class="container">
+<h1 class="title-1">İcmaya baş çəkin</h1>
+<p>Suallarınız var? Suallarınıza cavabları dünyanın hər yerindən ekspert pərəstişkarları birliyimizdə tapın!</p>
+<a class="black_btn" href="#">CAVABLARI TAPIN</a>
+</div>
+</div>
+		<!--Visit Community-->
+
+		<!--Footer-->
+		<custom-footer></custom-footer>
+		<!--Footer-->
+
+		<div id="opacity" class="opacity"></div>
+		<script src="./component/header.js"></script>
+		<script src="./component/footer.js"></script>
+		<script src="./js/main.js"></script>
+		<script>
+			var coll = document.getElementsByClassName("collapsible");
+			var i;
+			
+			for (i = 0; i < coll.length; i++) {
+			  coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight){
+				  content.style.maxHeight = null;
+				} else {
+				  content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			  });
+			}
+		</script>
+	</body>
+</html>

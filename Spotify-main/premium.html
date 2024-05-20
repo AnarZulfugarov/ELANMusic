@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/animation.css">
+		<link rel="stylesheet" href="./css/responsive.css">
+		<title>ELAN</title>
+		<link rel="icon" href="Spotify-songs/logo3.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+        />
+	</head>
+	<body>
+		<!--Header-->
+		<custom-header></custom-header>
+		<!--Header-->
+
+        <div class="premium-head">
+            <div class="container">
+                <h1>Premium gedin. Xoşbəxt olun.</h1>
+                <h2 class="title-2">Premiumun səsi inanılmazdır. Bütün cihazlarınızda reklamsız musiqidən həzz alın.</h2>
+                <a class="black_btn" href="#plans">Planlara Baxın</a>
+                <p><small><a href="">*Qaydalar və şərtlər tətbiq olunur</a> apply.</small></p>
+            </div>
+        </div>
+
+        <div class="why-premium">
+            <div class="container">
+                <h2 class="title-1">Niyə Premiuma yüksəltməlisiniz?
+                </h2>
+            </div>
+            <div class="container why-cards">
+                <why-card image="./assets/benefit_1.png"
+                          title="Musiqi yukle."
+                          text="İstədiyiniz yerdə qulaq asın.">
+                </why-card>
+                <why-card image="./assets/benefit_2.png"
+                          title="Reklam fasilələri yoxdur."
+                          text="Fasiləsiz musiqidən həzz alın.">
+                </why-card>
+                <why-card image="./assets/benefit_3.png"
+                          title="İstədiyiniz mahnını ifa edin."
+                          text="Hətta mobil telefonunuzda.">
+                </why-card>
+                <why-card image="./assets/benefit_4.png"
+                          title="Limitsiz mahnı atlama."
+                          text="Sadəcə növbəti düyməni basın.">
+                </why-card>
+            </div>
+        </div>
+        
+        <div id="plans" class="premium-plans">
+            <div class="container plans-text">
+                <h2>Premiumunuzu seçin</h2>
+                <p>ELAN-ı istədiyiniz yerdə, istədiyiniz cihazda dinləyə bilərsiniz..</p>
+            </div>
+            <div class="container plans-container">
+                <pay-plan prepay="Əvvəlcədən ödənilmiş planlar mövcuddur"
+                          name="Fərdi"
+                          price="179 azn"
+                           account="1 hesab"
+                           list-1="Musiqinizi reklamsız dinləyin"
+                           list-2="İstənilən yerdə oynayın, hətta oflayn dinləyin"
+                           list-3="İstədiyiniz zaman oynayın"
+                          list-4="Öncədən ödəyin və ya qeydiyyatdan keçin"
+                           btntext="İSTİFADƏ ETMƏYƏ BAŞLAYIN"
+                           smalltesxt="*Qaydalar və şərtlər tətbiq olunur."
+                           active="false">
+                </pay-plan>
+                <pay-plan prepay=""
+                           name="Duo"
+                           price="239 azn"
+                           account="2 hesab"
+                           list-1="2 Premium eyni dam altında yaşayan cütlüklər üçün hesablanır"
+                           list-2="Duo Mix: İki nəfərlik pleylist, ikinizin zövq alacağı musiqi ilə müntəzəm olaraq yenilənir"
+                           list-3="Fasiləsiz musiqi dinləyin, oflayn oynayın, istədiyiniz zaman oynayın"
+                           list-4=""
+                           btntext="İSTİFADƏ ETMƏYƏ BAŞLAYIN"
+                           smalltesxt="*Qaydalar və şərtlər tətbiq olunur."
+                           active="false">
+                </pay-plan>
+                <pay-plan prepay=""
+                           name="Ailə"
+                           price="299 azn"
+                           account="6 hesaba qədər"
+                           list-1="Eyni dam altında yaşayan ailə üzvləri üçün 6 ayrı Premium hesabı"
+                           list-2="Ailə Qarışığı: Ailəniz üçün, hamınızın zövq alacağı musiqi ilə müntəzəm olaraq yenilənən pleylist"
+                           list-3="Senzurasız musiqini bloklayın"
+                           list-4="Fasiləsiz musiqi dinləyin, oflayn oynayın, istədiyiniz zaman oynayın"
+                           btntext="İSTİFADƏ ETMƏYƏ BAŞLAYIN"
+                           smalltesxt="*Qaydalar və şərtlər tətbiq olunur. Eyni ünvanda yaşayan ailələr üçün."
+                           active="false">
+                </pay-plan>
+                <pay-plan prepay=""
+                           name="Tələbə"
+                           price="149 azn"
+                           account="1 hesab"
+                           list-1="Faydalana bilən universitet tələbələrinə xüsusi endirim"
+                           list-2="Musiqinizi reklamsız dinləyin"
+                           list-3="İstənilən yerdə oynayın, hətta oflayn dinləyin"
+                           list-4="İstədiyiniz zaman oynayın"
+                           btntext=""
+                           smalltesxt=""
+                           active="true">
+                </pay-plan>
+            </div>
+        </div>
+
+
+		<!--Footer-->
+		<custom-footer></custom-footer>
+		<!--Footer-->
+
+		<div id="opacity" class="opacity"></div>
+		<script src="./component/header.js"></script>
+        <script src="./component/footer.js"></script>
+        <script src="./component/whyCard.js"></script>
+        <script src="./component/payPlan.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            //change header background color
+            window.onscroll = function() {scrollFunction()};
+            document.querySelector("header").style.backgroundColor = "transparent";
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.querySelector("header").style.backgroundColor = "rgba(0, 0, 0, 0.6)";
+                }else {
+                    document.querySelector("header").style.backgroundColor = "transparent";
+                }
+            }
+        </script>
+	</body>
+</html>
